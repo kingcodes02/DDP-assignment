@@ -1,0 +1,59 @@
+---
+title: "Assignment"
+author: "King"
+date: "2022-10-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## King's Office - London
+
+I work as a Data analyst with a financial provider. I love my job.
+
+```{r, echo=FALSE}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=51.5113945, lng=-0.0833722,
+            popup="King's Office")
+my_map
+```
+
+My company has office in two other locations:
+
+1.    Bradford, and
+2.    Chatham
+
+
+**The Bradford Office;**
+
+```{r, echo=FALSE}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=53.792890, lng=-1.756300,
+            popup="King's Office")
+my_map
+```
+
+**The Chatham Office;**
+
+```{r, echo=FALSE}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles() %>%
+  addMarkers(lat=45.058491, lng=-70.266166,
+            popup="King's Office")
+my_map
+```
+
+
+
+
+
+
+
+
